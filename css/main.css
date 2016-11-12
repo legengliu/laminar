@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Quattrocento');
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Lato, sans-serif;
+    background: -webkit-linear-gradient(left top, #3498db, #8531b1);
+    background: linear-gradient(to bottom right, #3498db, #8531b1); /* Standard syntax */
+}
+
+div, nav {
+    position: relative;
+    display: block;
+}
+
+p, h1, h2, h3, h4, div {
+    margin: 0;
+    font-weight: 100;
+    color: #ecf0f1;
+}
+
+a, a:visited {
+    color: white;
+}
+
+header {
+    position: fixed;
+    border-bottom: 2px solid #ecf0f1;
+    padding: 10px;
+    margin: 5px 20px 0 20px;
+    left: 0;
+    right: 0;
+    top: 0;
+    font-family: Quattrocento;
+}
+
+#greeting {
+    position: absolute;
+    font-weight: lighter;
+    left: 50%;
+    top: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+    #greeting form {
+        padding: 10px;
+        display: inline-block;
+    }
+
+#greeting.normal {
+    font-weight: 100;
+}
+
+input[type=text] {
+    padding: 10px 10px;
+    margin: 4px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ecf0f1;
+    background-color: transparent;
+    
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 100%;
+}
