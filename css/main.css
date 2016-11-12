@@ -23,18 +23,69 @@ p, h1, h2, h3, h4, div {
 
 a, a:visited {
     color: white;
+    text-decoration: none;
+    font-family: Lato, sans-serif;
 }
 
+/* Navigation */
+
 header {
-    position: fixed;
-    border-bottom: 2px solid #ecf0f1;
-    padding: 10px;
-    margin: 5px 20px 0 20px;
-    left: 0;
-    right: 0;
-    top: 0;
+    padding: 10px 0px;
+    margin: 0 20px;
+    overflow: auto;
     font-family: Quattrocento;
+    border-bottom: 1px solid white;
 }
+
+    header h1 {
+        font-family: Quattrocento;
+    }
+
+    .logo_container {
+        overflow: auto;
+        float: left;
+        color: white;
+    }
+
+    .logo_container a {
+        overflow: auto;
+    }
+
+    #logo {
+        display: block;
+        float: left;
+        padding: 1px;
+    }
+
+    nav {
+        overflow: auto;
+        float: right;
+    }
+
+    nav ul {
+        padding: 0;
+        margin: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin: 10px 0;
+    }
+
+    nav a {
+        width: 100px;
+        padding: 5px 20px;
+        margin: 5px 10px;
+        cursor: pointer;
+        transition: 0.5s;
+    }
+
+    nav a:hover {
+        background-color: rgba(255, 255, 255, .5);
+        border-radius: 50px;
+        color: black;
+        transition: 0.5s;
+    }
 
 #greeting {
     position: absolute;
