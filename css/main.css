@@ -40,8 +40,9 @@ a, a:visited {
 
 /* Navigation */
 #home {
-    background: -webkit-linear-gradient(left top, #3498db, #8531b1);
-    background: linear-gradient(to bottom right, #3498db, #8531b1);
+    background-image: url('../img/background.png');
+    background-position: center;
+    background-size: cover;
     padding: 0;
 }
 
