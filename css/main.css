@@ -82,17 +82,9 @@ header {
 
     #logo h1 {
         display: inline-block;
-        /*position: relative;
-        top: 50%;
-        transform: translateY(-50%);*/
     }
 
-    #logo_img {
-        /*position: absolute;*/*/
-        display: inline-block;
-        opacity: .7;
-        width: 30px;
-    }
+
 
     nav {
         overflow: auto;
@@ -125,6 +117,7 @@ header {
     }
 
 #greeting {
+    /*display: inline-block;*/
     position: absolute;
     font-weight: lighter;
     top: 50%;
@@ -133,6 +126,11 @@ header {
     transform: translate(-50%, -50%);
     text-align: center;
 }
+    #logo_img {
+        display: inline-block;
+        width: 200px;
+        margin-bottom: 20px;
+    }
 
     #greeting h1 {
         display: inline-block;
@@ -183,7 +181,10 @@ input[type=text]:focus {
 
 /* == ABOUT == */
 #about {
-    background-color: #4b2e3b;
+    background-color: rgb(68, 123, 188);
+    background: rgb(68, 123, 188), rgb(89, 57, 125); /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(left top, rgb(68, 123, 188), rgb(89, 57, 125)); /* For Safari 5.1 to 6.0 */
+    background: linear-gradient(to bottom right, rgb(68, 123, 188), rgb(89, 57, 125)); /* Standard syntax */
     display: flex;
     flex-wrap: wrap;
     height: auto;
@@ -397,6 +398,11 @@ footer {
 
 #contribution_input input[type=text]:focus {
     width: 100%;
+}
+
+#no {
+    filter:blur(3px);
+    -webkit-filter: blur(3px);
 }
 
 input[type=button] {
